@@ -1,7 +1,7 @@
 <?php
 
 // Include Emma class
-require __DIR__ . '/../src/Emma.php';
+require __DIR__ . '/../src/EmmaEvents.php';
 
 // Prep our data
 $dataToSend = array(

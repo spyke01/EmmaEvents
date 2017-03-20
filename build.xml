@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Emma" default="main" description="Emma API wrapper">
+<project name="EmmaEvents" default="main" description="Emma Events API wrapper">
 
     <property name="message" value="Phing Running..."/>
     <property name="php_bin_path" value="/usr/bin/" />
