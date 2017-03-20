@@ -6,15 +6,31 @@ class EmmaTest extends PHPUnit_Framework_TestCase {
 
     public function setup() {
 
-        $this->EmmaClient = new markroland\Emma(
+        $this->EmmaClient = new FTS\EmmaEvents(
             EMMA_ACCOUNT_ID,
             EMMA_PUBLIC_KEY,
             EMMA_PRIVATE_KEY
         );
     }
-
-    public function test_get_field_list() {
-        $response = $this->EmmaClient->get_field_list(1);
+	
+	/* 
+	//look into the best way to create a test for this
+    public function test_trigger_event() {
+		$dataToSend = array(
+			'event_name' => 'rss-updated', // This event name must be on the event trigger for emma
+			'genre' => 'scifi',
+			'email' => 'email@domain.com', // This email must be on the list we are specifying
+			'new_items' => array(
+				array(
+					'title' => 'Test',
+					'date' => '2017-06-08',
+					'excerpt' => 'Testy test test',
+					'link' => 'linkylink',
+				),
+			),
+		);
+        $response = $this->EmmaClient->trigger_event($dataToSend);
         $this->assertNull($response);
     }
+    */
 }
