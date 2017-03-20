@@ -1,22 +1,23 @@
-Emma
+EmmaEvents
 ====
 
-Emma is a PHP class for interaction with the [Emma API](http://api.myemma.com).
+EmmaEvents is a PHP class for interaction with the [Emma API](http://api.myemma.com).
 
-    Copyright (c) 2012-2015 Mark Roland.
-    Written by Mark Roland
+    Copyright (c) 2017 Paden Clayton.
+    Written by Paden Clayton
+    Base on [Emma](https://github.com/markroland/emma) by Mark Roland
     Released under the MIT license.
 
 This PHP class may be distributed and used for free. The author makes
 no guarantee for this software and offers no support.
 
-Build status: [![Build Status](https://travis-ci.org/markroland/emma.svg)](https://travis-ci.org/markroland/emma)
+Build status: [![Build Status](https://travis-ci.org/spyke01/EmmaEvents.svg)](https://travis-ci.org/spyke01/EmmaEvents)
 
 Installation
 ------------
 
 ```sh
-    composer require markroland/emma:~2
+    composer require FTS/EmmaEvents:~2
 ```
 
 Usage
@@ -25,51 +26,19 @@ Usage
 To get started, initialize the Emma class as follows:
 
 ```php
-    $emma = new Emma(<account_id>, <public_key>, <private_key>);
+    $emmaEvents = new EmmaEvents(<account_id>, <public_key>, <private_key>);
 ```
 
 For example,
 
 ```php
-    $emma = new Emma('1234','Drivorj7QueckLeuk','WoghtepheecijnibV');
+    $emmaEvents = new EmmaEvents('1234','Drivorj7QueckLeuk','WoghtepheecijnibV');
 ```
-
-The "tests" folder in this package contains some test scripts that can
-be run to see how emma.class.php may be used.
 
 In order to understand how to use this script, please make sure you
 have a good understanding of the Emma API:
 
 http://api.myemma.com/
-
-Build
-=====
-
-## Build using Phing
-
-```sh
-    phing
-```
-
-```sh
-    phing phpdoc
-```
-
-```sh
-    phing phpcs
-```
-
-## PHPUnit 
-
-```sh
-    phpunit --bootstrap tests/bootstrap.php tests
-```
-
-## Code Coverage
-
-```sh
-    phpunit --coverage-html ./report ./tests
-```
 
 ## PHP Documentation
 
@@ -83,5 +52,5 @@ to be installed globally on the server. It uses phpdoc.dist.xml for runtime conf
 ## Code Sniff
 
 ```sh
-    phpcs -n --report-width=100 ./src/Emma.php
+    phpcs -n --report-width=100 ./src/EmmaEvents.php
 ```

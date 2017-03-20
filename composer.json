@@ -1,14 +1,14 @@
 {
-    "name": "markroland/emma",
-    "description": "A PHP Wrapper for the Emma API",
+    "name": "FTS/EmmaEvents",
+    "description": "A PHP Wrapper for the Emma Events API",
     "keywords": [
         "Emma"
     ],
-    "homepage": "https://github.com/markroland/emma",
+    "homepage": "https://github.com/spyke01/EmmaEvents",
     "authors": [
         {
-            "name": "Mark Roland",
-            "homepage": "http://markroland.com/"
+            "name": "Paden Clayton",
+            "homepage": "https://www.fasttracksites.com/"
         }
     ],
     "license": "MIT",
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "markroland\\Emma\\": "src/"
+            "FTS\\EmmaEvents\\": "src/"
         }
     }
 }
